@@ -24,6 +24,7 @@ namespace BranchingSubmission
                 Console.WriteLine("Package too heavy to be shipped via Package Express. Have a good day.");
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadLine();
+                return;
             }
             // Else print a newline
             else
@@ -47,6 +48,7 @@ namespace BranchingSubmission
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadLine();
+                return;
             }
             // Else print a newline
             else
