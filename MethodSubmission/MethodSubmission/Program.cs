@@ -23,11 +23,11 @@ namespace MethodSubmission
             Console.WriteLine("First number:");
             int num1 = Convert.ToInt32(Console.ReadLine());
             // Second number is optional
-            int num2;
             Console.WriteLine("Second number:");
+            string num2Text = Console.ReadLine();
 
             // If the user presses the enter key when prompted for second number
-            if (Console.ReadKey(true).Key == ConsoleKey.Enter)
+            if (string.IsNullOrWhiteSpace(num2Text))
             {
                 // Display result of class method passing in only num1
                 Console.WriteLine("\n");
@@ -38,7 +38,7 @@ namespace MethodSubmission
             else
             {
                 // Display result of class method passing in both num1 and num2
-                num2 = Convert.ToInt32(Console.ReadLine());
+                int num2 = Convert.ToInt32(num2Text);
                 Console.WriteLine("\n");
                 Console.WriteLine("Testing the method with the provided numbers...");
                 Console.WriteLine("Result of method: " + mng.Operation(num1, num2));
