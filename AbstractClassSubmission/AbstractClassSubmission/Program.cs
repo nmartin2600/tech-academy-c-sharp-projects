@@ -17,9 +17,9 @@ namespace AbstractClassSubmission
             // Call function that will print full name of employee
             emp.SayName();
 
-            Console.WriteLine("\n");
-            Console.WriteLine("Press any key to exit...");
-            Console.ReadLine();
+            // Create new object of interface type IQuittable and call Quit() method as implemented in Employee class
+            IQuittable quittable = new Employee();
+            quittable.Quit();
         }
     }
 }
