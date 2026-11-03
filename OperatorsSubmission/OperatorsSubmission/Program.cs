@@ -11,13 +11,8 @@ namespace OperatorsSubmission
         static void Main(string[] args)
         {
             // Create 2 Employee objects and assign values to their properties
-            Employee first = new Employee(), second = new Employee();
-            first.Id = 1;
-            first.FirstName = "Nicholas";
-            first.LastName = "Martin";
-            second.Id = 2;
-            second.FirstName = "John";
-            second.LastName = "Smith";
+            Employee first = new Employee(1, "Nicholas", "Martin"),
+                     second = new Employee(2, "John", "Smith");
 
             // Check if the objects are equal using overloaded == operator
             Console.WriteLine("Are the two Employee objects equal (==)?");

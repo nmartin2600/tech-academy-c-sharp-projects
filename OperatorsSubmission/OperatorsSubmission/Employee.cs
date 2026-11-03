@@ -12,6 +12,13 @@ namespace OperatorsSubmission
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
+        public Employee(int id, string firstName, string lastName)
+        {
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
         // Overload == operator to check if 2 Employee objects are equal
         // by comparing their Id property
         public static bool operator ==(Employee first, Employee second)
